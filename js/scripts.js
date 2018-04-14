@@ -24,13 +24,16 @@ $(function() {
             break;
 
             case 'monthly':
-                var url = "https://www.tarot.com/horoscopes/april-2018/";
+                var year = getYear();
+                var month = getMonth();
+                var url = `https://www.tarot.com/horoscopes/${month}-${year}/`;
                 var classname = "forecast-body clear";
                 getHoroz(url, classname);
             break;
 
             case 'yearly':
-                var url = "https://www.tarot.com/horoscopes/2018/";
+                var year = getYear();
+                var url = `https://www.tarot.com/horoscopes/${year}/`;
                 var classname = "forecast-body clear";
                 getHoroz(url, classname);
             break;
@@ -59,6 +62,58 @@ $(function() {
                 }
             }
         });
+    }
+
+    var getYear = function() {
+        var d = new Date();
+        var y = d.getFullYear();
+        return y;
+    }
+
+    var getMonth = function() {
+        var d = new Date();
+        var m = d.getMonth();
+
+        switch (m) {
+            case 0:
+                return 'january';
+            break;
+            case 1:
+                return 'february';
+            break;
+            case 2:
+                return 'march';
+            break;
+            case 3:
+                return 'april';
+            break;
+            case 4:
+                return 'may';
+            break;
+            case 5:
+                return 'june';
+            break;
+            case 6:
+                return 'july';
+            break;
+            case 7:
+                return 'august';
+            break;
+            case 8:
+                return 'september';
+            break;
+            case 9:
+                return 'october';
+            break;
+            case 10:
+                return 'november';
+            break;
+            case 11:
+                return 'december';
+            break;
+            default:
+                return 'unknown date';
+        }
     }
 });
 

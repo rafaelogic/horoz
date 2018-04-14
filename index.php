@@ -16,9 +16,7 @@
           content="Get your daily, monthly, and/or yearly horoscope. It also displays your zodiac sign characteristics." />
     <meta property="fb:app_id" content="848460405244798" />
     <meta property="og:type" content="article" />
-    <meta property="article:author" content="https://www.facebook.com/rafaelogic" />
-    <meta property="og:image"
-          content="http://rrafael.asia/horoz/assets/images/horoz.jpg" />
+    <meta property="article:author" content="https://www.facebook.com/d3vt3c" />
 
     <title>Horoz by rafaelogic | Horoscope</title>
 
