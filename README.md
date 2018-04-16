@@ -13,3 +13,5 @@ php -S localhost:3000
 WINDOWS
 
 localhost/foldername
+
+**For now it only works on localhost
